@@ -1,0 +1,45 @@
+[
+    {
+      "id": "1",
+      "picture": "http://placehold.it/32x32",
+      "name": "Sh shuvo",
+      "reviews": "5",
+      "reviewsDetails": "It's an authorized dealer of ACI motors ltd. Its main products are YAMAHA motorcycles."
+    },
+    {
+      "id": "2",
+      "picture": "http://placehold.it/32x32",
+      "name": "lavlu shiekh",
+      "reviews": "5",
+      "reviewsDetails": "It's an awesome motorcycles."
+    },
+    {
+      "id": "3",
+      "picture": "http://placehold.it/32x32",
+      "name": "Md. Zahedul Islam Zahid",
+      "reviews": "4",
+      "reviewsDetails": "It's not bad motorcycles."
+    },
+    {
+      "id": "4",
+      "picture": "http://placehold.it/32x32",
+      "name": "Amirul Bizoy",
+      "reviews": "3",
+      "reviewsDetails": "I dont like this motorcycles."
+    },
+    {
+      "id": "5",
+      "picture": "http://placehold.it/32x32",
+      "name": "SM Sagor",
+      "reviews": "5",
+      "reviewsDetails": "It's my dream motorcycles."
+    },
+    {
+      "id": "6",
+      "picture": "http://placehold.it/32x32",
+      "name": "MJM Monir",
+      "reviews": "5",
+      "reviewsDetails": "I love it, It's my dream motorcycles."
+    }
+   
+  ]

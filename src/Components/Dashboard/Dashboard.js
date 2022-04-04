@@ -45,7 +45,7 @@ const Dashboard = () => {
     return (
         <div>
             <div>
-                <h1 className='text-3xl my-5 font-bold'>AreaChart</h1>
+                <h1 className='text-3xl my-5 font-bold'>Investment $ Revenue</h1>
                 <AreaChart className='m-auto my-5' width={730} height={250} data={data}
                     margin={{ top: 10, right: 30, left: 0, bottom: 0 }}>
                     <defs>
@@ -62,21 +62,21 @@ const Dashboard = () => {
                     <YAxis />
                     <CartesianGrid strokeDasharray="3 3" />
                     <Tooltip />
-                    <Area type="monotone" dataKey="investment" stroke="#8884d8" fillOpacity={1} fill="url(#colorUv)" />
-                    <Area type="monotone" dataKey="revenue" stroke="#82ca9d" fillOpacity={1} fill="url(#colorPv)" />
+                    <Area type="monotone" dataKey="investment" stackId="a" stroke="#8884d8" fillOpacity={1} fill="url(#colorUv)" />
+                    <Area type="monotone" dataKey="revenue" stackId="a" stroke="#82ca9d" fillOpacity={1} fill="url(#colorPv)" />
                 </AreaChart>
 
             </div>
             <div>
-                <h1 className='text-3xl my-5 font-bold'>BarChart</h1>
+                <h1 className='text-3xl my-5 font-bold'>Investment $ Revenue</h1>
                 <BarChart className='m-auto my-10' width={730} height={250} data={data}>
                     <CartesianGrid strokeDasharray="3 3" />
                     <XAxis dataKey="month" />
                     <YAxis />
                     <Tooltip />
-                    <Legend />
-                    <Bar dataKey="investment" fill="#8884d8" />
-                    <Bar dataKey="revenue" fill="#82ca9d" />
+                    <Legend /> 
+                    <Bar dataKey="investment" stackId="a" fill="#8884d8" />
+                    <Bar dataKey="revenue" stackId="a" fill="#82ca9d" />
                 </BarChart>
             </div>
         </div>

@@ -3,6 +3,7 @@ import useLoadData from '../../Hooks/useLoadData';
 import ReviewDetails from '../ReviewDetails/ReviewDetails';
 
 const Reviews = () => {
+    // coustom hook 
     const [loadData, setLoadData] = useLoadData();
 
     return (

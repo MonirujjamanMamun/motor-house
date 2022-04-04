@@ -1,9 +1,15 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import useLoadData from '../../Hooks/useLoadData';
+import ReviewDetails from '../ReviewDetails/ReviewDetails';
 
 const Reviews = () => {
+    const [loadData, setLoadData] = useLoadData();
+
     return (
-        <div>
-            <h1>This is reviews section.</h1>
+        <div className='grid grid-cols-3 gap-16 my-5'>
+            {
+                loadData.map(data => <ReviewDetails key={data.id} data={data}></ReviewDetails>)
+            }
         </div>
     );
 };

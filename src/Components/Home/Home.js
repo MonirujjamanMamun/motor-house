@@ -1,5 +1,6 @@
 import React from 'react';
 import useLoadData from '../../Hooks/useLoadData';
+import CoustomLink from '../CoustomLink/CoustomLink';
 import ReviewDetails from '../ReviewDetails/ReviewDetails';
 
 const Home = () => {
@@ -15,7 +16,7 @@ const Home = () => {
                     <button className='rounded bg-blue-400 text-white py-3 px-6 mt-4 hover:bg-blue-900'>Live demo</button>
                 </div>
                 <div>
-                    <img src="https://dd5394a0b8ca8e97ba29-abf76f3d91a2125517d6c7c409f095c7.ssl.cf1.rackcdn.com/content/common/Models/2022/aa28e049-b34b-40a8-8ed0-694d2d2bd9d8.png" alt="yamaha-R15" />
+                    <img className='h-80 w-full object-cover' src="https://dd5394a0b8ca8e97ba29-abf76f3d91a2125517d6c7c409f095c7.ssl.cf1.rackcdn.com/content/common/Models/2022/aa28e049-b34b-40a8-8ed0-694d2d2bd9d8.png" alt="yamaha-R15" />
                 </div>
             </div>
             <div>
@@ -25,7 +26,8 @@ const Home = () => {
                         loadData.slice(0, 3).map(data => <ReviewDetails key={data.id} data={data}></ReviewDetails>)
                     }
                 </div>
-                <button className='rounded bg-blue-400 text-white py-3 px-6 mt-4 hover:bg-blue-900'>See All reviews.</button>
+                <CoustomLink to='/reviews'> <button className='rounded bg-blue-400 text-white py-3 px-6 mt-4 hover:bg-blue-900 mb-10'>See All reviews</button></CoustomLink>
+                
             </div>
         </div>
     );
